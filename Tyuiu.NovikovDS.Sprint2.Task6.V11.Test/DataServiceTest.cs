@@ -11,6 +11,6 @@ public class DataServiceTest
         DataService ds = new();
         int g = 2023, m = 12, n = 31;
 
-        Assert.AreEqual("2024.1.1", ds.FindDateOfNextDay(g, m, n));
+        Assert.AreEqual("01.01.2024", ds.FindDateOfNextDay(g, m, n));
     }
 }

@@ -24,7 +24,7 @@ namespace Tyuiu.NovikovDS.Sprint2.Task6.V11.Lib
                         {
                             n++;
                         }
-                        return (g + "." + m + "." + n); 
+                        break;
                     }
                 case 4: case 6: case 9: case 11:
                     {
@@ -37,8 +37,8 @@ namespace Tyuiu.NovikovDS.Sprint2.Task6.V11.Lib
                         {
                             n++;
                         }
-                        return (g + "." + m + "." + n);
                     }
+                    break;
                 case 2:
                     {
                         if (n == 28)
@@ -50,10 +50,14 @@ namespace Tyuiu.NovikovDS.Sprint2.Task6.V11.Lib
                         {
                             n++;
                         }
-                        return (g + "." + m + "." + n);
                     }
+                    break;
                 default: return "Неверные данные";
             }
+            if ((n / 10 == 0) && (m / 10 == 0)) return ("0" + n + ".0" + m + "." + g);
+            else if (m / 10 == 0) return (n + ".0" + m + "." + g);
+            else if (n / 10 == 0) return ("0" + n + "." + m + "." + g);
+            else return (n + "." + m + "." + g);
         }
     }
 

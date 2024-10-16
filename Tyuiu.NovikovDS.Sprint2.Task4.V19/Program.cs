@@ -18,11 +18,18 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
+double x, y;
+
 Console.WriteLine("Введите значение X:");
-double x = Convert.ToDouble(Console.ReadLine());
+x = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Введите значение Y:");
-double y = Convert.ToDouble(Console.ReadLine());
+do
+{
+    y = Convert.ToDouble(Console.ReadLine());
+    if ((y == 0) && ((x / 2) < (y - 6))) Console.WriteLine("Введите другое значение Y (происходит деление на ноль):");
+} while ((y == 0) && ((x / 2) < (y - 6)));
+
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");

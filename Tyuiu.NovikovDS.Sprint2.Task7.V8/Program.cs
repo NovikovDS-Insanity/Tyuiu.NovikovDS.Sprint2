@@ -19,10 +19,10 @@ Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                             
 Console.WriteLine("***************************************************************************");
 
 Console.WriteLine("Введите X:");
-double x = Convert.ToInt32(Console.ReadLine());
+double x = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Введите Y:");
-double y = Convert.ToInt32(Console.ReadLine());
+double y = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");

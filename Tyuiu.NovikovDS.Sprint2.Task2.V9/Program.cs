@@ -18,10 +18,20 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
-Console.WriteLine("Введите значение X:");
-int x = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите значение Y:");
-int y = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите значение X (от 1 до 15):");
+int x, y;
+do
+{
+    x = Convert.ToInt32(Console.ReadLine());
+    if ((x > 15) || (x < 1)) Console.WriteLine("Введите значение от 1 до 15:");
+} while ((x > 15) || (x < 1));
+
+Console.WriteLine("Введите значение Y (от 1 до 15):");
+do
+{
+    y = Convert.ToInt32(Console.ReadLine());
+    if ((y > 15) || (y < 1)) Console.WriteLine("Введите значение от 1 до 15:");
+} while ((y > 15) || (y < 1));
 
 bool res = ds.CheckDotInShadedArea(x, y);
 

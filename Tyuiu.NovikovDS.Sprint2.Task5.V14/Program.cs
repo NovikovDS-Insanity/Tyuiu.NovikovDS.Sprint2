@@ -20,11 +20,22 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
+int d, k;
+
 Console.WriteLine("Какой день 1 января пн, вт, .., вс (от 1 до 7):");
-int d = Convert.ToInt32(Console.ReadLine());
+do
+{
+    d = Convert.ToInt32(Console.ReadLine());
+    if ((d < 1) || (d > 7)) Console.WriteLine("Введите число от 1 до 7:");
+} while ((d < 1) || (d > 7));
+
 
 Console.WriteLine("Введите день (от 1 до 365):");
-int k = Convert.ToInt32(Console.ReadLine());
+do
+{
+    k = Convert.ToInt32(Console.ReadLine());
+    if ((k < 1) || (k > 365)) Console.WriteLine("Введите число от 1 до 365:");
+} while ((k < 1) || (k > 365));
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");

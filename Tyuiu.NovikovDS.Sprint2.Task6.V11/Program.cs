@@ -18,14 +18,20 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
+int g, m, n;
+
 Console.WriteLine("Введите год:");
-int g = Convert.ToInt32(Console.ReadLine());
+do
+{
+    g = Convert.ToInt32(Console.ReadLine());
+    if (g < 0) Console.WriteLine("Год не может быть отрицательным:");
+} while (g < 0);
 
 Console.WriteLine("Введите месяц:");
-int m = Convert.ToInt32(Console.ReadLine());
+m = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите число:");
-int n = Convert.ToInt32(Console.ReadLine());
+n = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");

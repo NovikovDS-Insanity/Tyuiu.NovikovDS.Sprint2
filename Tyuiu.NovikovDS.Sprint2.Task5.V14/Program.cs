@@ -5,7 +5,7 @@ Console.Title = "Спринт #2 | Выполнил: Новиков Д. С. | Р
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* Спринт #2                                                               *");
-Console.WriteLine("* Тема: Базовые навыки работы в C#                                        *");
+Console.WriteLine("* Тема: Оператор switch                                                   *");
 Console.WriteLine("* Задание #5                                                              *");
 Console.WriteLine("* Вариант #14                                                             *");
 Console.WriteLine("* Выполнил: Новиков Д. С. | РППб-24-1                                     *");
